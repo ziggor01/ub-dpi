@@ -18,7 +18,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 echo "#################################################################################################"
 #Налаштування групи для поточного користувача
 sudo usermod -aG docker $USER
-newgrp docker
+#newgrp docker
 sudo groupadd docker
 
 echo "#################################################################################################"
