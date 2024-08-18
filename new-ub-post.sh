@@ -30,3 +30,4 @@ docker run -it --rm -d -p 8081:80 --name web nginx >> hw2.txt 2>&1
 docker ps >> hw2.txt 2>&1
 docker images >> hw2.txt 2>&1
 docker rmi hello-world:latest nginx:latest -f >> hw2.txt 2>&1
+echo "Skript END"
