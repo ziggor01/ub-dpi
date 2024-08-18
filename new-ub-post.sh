@@ -19,4 +19,10 @@ sudo usermod -aG docker $USER
 newgrp docker
 sudo groupadd docker
 
-sudo docker run hello-world
+#тестові дії
+docker run hello-world
+docker run -it --rm -d -p 8080:80 --name nginx nginx
+docker run -it --rm -d -p 8080:80 --name web nginx
+docker ps
+docker images
+docker rmi hello-world:latest nginx:latest -f
