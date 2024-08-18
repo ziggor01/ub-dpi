@@ -18,10 +18,10 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 echo "#################################################################################################"
 #тестові дії
-docker run hello-world
-docker run -it --rm -d -p 8080:80 --name nginx nginx
-docker run -it --rm -d -p 8081:80 --name web nginx
-docker ps
-docker images
-docker rmi hello-world:latest nginx:latest -f
+sudo docker run hello-world
+sudo docker run -it --rm -d -p 8080:80 --name nginx nginx
+sudo docker run -it --rm -d -p 8081:80 --name web nginx
+sudo docker ps
+sudo docker images
+sudo docker rmi hello-world:latest nginx:latest -f
 echo "END"
