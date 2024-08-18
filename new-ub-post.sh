@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Skript start"
 #Оновлення + встановлення знідно інструкції на офф сайті
 sudo apt -y update > hw2.txt 2>&1
 sudo apt-get install ca-certificates curl >> hw2.txt 2>&1
