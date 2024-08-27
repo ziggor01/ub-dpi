@@ -2,7 +2,7 @@
 echo "START"
 #Оновлення + встановлення знідно інструкції на офф сайті
 sudo apt -y update
-sudo apt install mc curl snap
+sudo apt -y install mc curl snap
 sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
@@ -19,9 +19,9 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 # echo "#################################################################################################"
 
-# sudo groupadd docker
-# sudo usermod -aG docker ${USER}
-# newgrp docker
+ sudo groupadd docker
+ sudo usermod -aG docker ${USER}
+ newgrp docker
 
 # echo "#################################################################################################"
 
