@@ -33,19 +33,20 @@ sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 sudo systemctl enable --now kubelet
-
+sleep 5
 ####################################################################
 
 sudo sysctl -w net.ipv4.ip_forward=1
 echo "net.ipv4.ip_forward = 1" | sudo tee -a /etc/sysctl.conf
-
+sleep 5
 ###################################################################
 
 sudo kubeadm init
+sleep 25
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
-
+sleep 5
 ####################################################################
 
 kubectl get pods -n kube-system
