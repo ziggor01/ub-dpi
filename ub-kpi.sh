@@ -42,11 +42,13 @@ sleep 5
 ###################################################################
 
 sudo kubeadm init
-sleep 25
+sleep 65
+
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 sleep 5
+
 ####################################################################
 
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
