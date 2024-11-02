@@ -54,3 +54,7 @@ sleep 5
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 
 kubectl get pods -n kube-system
+
+kubectl get nodes
+
+kubectl get pods --all-namespaces
